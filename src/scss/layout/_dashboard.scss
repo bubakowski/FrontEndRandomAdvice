@@ -1,0 +1,13 @@
+@use "./src/scss/abstracts/mixins" as m;
+@use "./src/scss/abstracts/colors" as c;
+
+
+.wrapper{
+
+    @include m.flex(center, column, center);
+
+    background: c.$DarkBlue;
+    height: 100vh;
+    width: 100vw;
+
+}

@@ -1,0 +1,20 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 28px;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=/mains.f66c3057.css.map */

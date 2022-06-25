@@ -1,0 +1,94 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 28px;
+}
+
+.card {
+  background: hsl(217deg, 19%, 24%);
+  max-width: 40%;
+  max-height: 60%;
+  border-radius: 20px;
+}
+.card h1 {
+  margin-top: 10%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 1em;
+  color: hsl(150deg, 100%, 66%);
+}
+.card p {
+  margin: 5% auto 2%;
+  text-align: center;
+  width: 90%;
+  color: hsl(193deg, 38%, 86%);
+}
+.card .bottom_card {
+  position: relative;
+}
+.card .bottom_card .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% auto 0%;
+  width: 90%;
+  padding-bottom: 15%;
+}
+.card .bottom_card .dice {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  background: hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+  padding: 3%;
+  transform: scale(0.95) translate(-50%, 50%);
+  transition: all ease-out 0.3s;
+}
+.card .bottom_card .dice img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .bottom_card .dice:hover {
+  cursor: pointer;
+  transform: scale(1) translate(-50%, 50%);
+  box-shadow: 0 0 20px 0px hsl(150deg, 100%, 66%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: hsl(218deg, 23%, 16%);
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    max-width: 90%;
+  }
+  .card .bottom_card {
+    margin-top: 5%;
+  }
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -1,0 +1,52 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+
+.card {
+	background: $DarkGrayishBlue;
+	max-width: 40%;
+	max-height: 60%;
+	border-radius: 20px;
+	h1 {
+		margin-top: 10%;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		text-align: center;
+		font-size: 1em;
+		color: $NeonGreen;
+	}
+	p {
+		margin: 5% auto 2%;
+		text-align: center;
+		width: 90%;
+		color: $LightCyan;
+	}
+	.bottom_card {
+		position: relative;
+		.divider {
+			@include flex(center, column, center);
+			margin: 5% auto 0%;
+			width: 90%;
+			padding-bottom: 15%;
+		}
+		.dice {
+			img{
+				@include flex(center,column,center);
+			}
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			// transform: ;
+			background:$NeonGreen;
+			border-radius: 50%;
+			padding: 3%;
+			transform: scale(0.95) translate(-50%, 50%);;
+			transition: all ease-out .3s;
+		}
+		.dice:hover{
+			cursor: pointer;
+			transform: scale(1) translate(-50%, 50%);;
+
+			box-shadow: 0 0 20px 0px $NeonGreen;
+		}
+	}
+}
