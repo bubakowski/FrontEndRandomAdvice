@@ -24,9 +24,13 @@
 		position: relative;
 		.divider {
 			@include flex(center, column, center);
+			
 			margin: 5% auto 0%;
 			width: 90%;
 			padding-bottom: 15%;
+		}
+		.divider_mobile{
+			display: none;
 		}
 		.dice {
 			img{
@@ -40,13 +44,15 @@
 			border-radius: 50%;
 			padding: 3%;
 			transform: scale(0.95) translate(-50%, 50%);;
-			transition: all ease-out .3s;
+			transition: all ease-out .2s;
 		}
-		.dice:hover{
-			cursor: pointer;
-			transform: scale(1) translate(-50%, 50%);;
-
-			box-shadow: 0 0 20px 0px $NeonGreen;
+		@media screen and(min-width:426px) {
+			.dice:hover{
+				cursor: pointer;
+				transform: scale(1) translate(-50%, 50%);;
+				box-shadow: 0 0 20px 0px $NeonGreen;
+			}
 		}
+		
 	}
 }

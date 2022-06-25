@@ -1,9 +1,27 @@
+@use "./abstracts/colors" as *;
+
 @media screen and(max-width:425px) {
+	
 	.card {
 		max-width: 90%;
 		.bottom_card {
-         margin-top: 5%;
+			margin-top: 5%;
+			.divider {
+				display: none;
+			}
+			.divider_mobile {
+				display: block;
+				margin: 5% auto 0%;
+				width: 90%;
+				padding-bottom: 15%;
+			}
 			
+			.dice:active{
+				cursor: pointer;
+				transform: scale(1) translate(-50%, 50%);;
+	
+				box-shadow: 0 0 20px 0px $NeonGreen;
+			}
 		}
 	}
 }

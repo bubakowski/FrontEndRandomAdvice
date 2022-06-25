@@ -44,6 +44,9 @@ p {
   width: 90%;
   padding-bottom: 15%;
 }
+.card .bottom_card .divider_mobile {
+  display: none;
+}
 .card .bottom_card .dice {
   position: absolute;
   bottom: 0%;
@@ -52,7 +55,7 @@ p {
   border-radius: 50%;
   padding: 3%;
   transform: scale(0.95) translate(-50%, 50%);
-  transition: all ease-out 0.3s;
+  transition: all ease-out 0.2s;
 }
 .card .bottom_card .dice img {
   display: flex;
@@ -60,10 +63,12 @@ p {
   justify-content: center;
   flex-direction: column;
 }
-.card .bottom_card .dice:hover {
-  cursor: pointer;
-  transform: scale(1) translate(-50%, 50%);
-  box-shadow: 0 0 20px 0px hsl(150deg, 100%, 66%);
+@media screen and (min-width: 426px) {
+  .card .bottom_card .dice:hover {
+    cursor: pointer;
+    transform: scale(1) translate(-50%, 50%);
+    box-shadow: 0 0 20px 0px hsl(150deg, 100%, 66%);
+  }
 }
 
 footer {
@@ -88,6 +93,20 @@ footer {
   }
   .card .bottom_card {
     margin-top: 5%;
+  }
+  .card .bottom_card .divider {
+    display: none;
+  }
+  .card .bottom_card .divider_mobile {
+    display: block;
+    margin: 5% auto 0%;
+    width: 90%;
+    padding-bottom: 15%;
+  }
+  .card .bottom_card .dice:active {
+    cursor: pointer;
+    transform: scale(1) translate(-50%, 50%);
+    box-shadow: 0 0 20px 0px hsl(150deg, 100%, 66%);
   }
 }
 
